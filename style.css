@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* To prevent horizontal scroll */
+    font-size: 1vw;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 0.5em; /* Adjust as needed for smaller screens */
+    }
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 0.8em; /* Adjust as needed for larger screens */
+    }
+}
+
+header {
+    background-color: #333;
+    padding: 1.5vw 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif; /* Apply Josefin Sans to the navigation text */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5vw 3vw;
+    position: relative;
+}
+
+nav ul li a:before,
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #AADBC1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+nav ul li a:before {
+    top: -2px;
+}
+
+nav ul li a:hover:before,
+nav ul li a:hover:after {
+    opacity: 1;
+}
+
+section {
+    padding: 5% 0;
+    text-align: center;
+}
+
+#introduction, #ceremony {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#introduction {
+    background-image: url('photos/cuttingCake.JPG'); /* Replace 'cuttingCake.jpg' with the actual path to your image */
+}
+
+
+
+section:nth-child(even) {
+    background-color: #3f3f3f;
+}
+
+section:nth-child(odd) {
+    background-color: #AADBC1;
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive; /* Use Great Vibes font */
+    font-size: 5em; /* Original font size */
+    color: #fff;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif; /* Apply Josefin Sans to all paragraphs */
+    color: #fff;
+    font-size: 1.5em; /* Adjust the font size as desired */
+}
+
+.textContainerIntroduction {
+    position:relative;
+    padding: 30% 15%; /* 20% padding on the left and right */
+    
+}
+
+.textContainerIntroduction p {
+    position: relative;
+    font-family: 'Just Another Hand', cursive; /* Apply Just Another Hand font */
+    font-size: 3em;
+    position: relative; /* Set position to absolute */
+    top: 50%; /* Adjust the top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center horizontally */
+    
+}
+
+.textContainerIntroduction .introductionLetterHeader {
+    font-size: 5em;
+    position: relative; /* Set position to absolute */
+    top: 20%; /* Adjust the top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center horizontally */
+    
+}
+
+#ceremony {
+    background-image: url('photos/newlandHall.JPG');
+    background-size: 100% 85%; /* Cover 100% of width and 80% of height */
+    background-position: center bottom; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+.subheadings {
+    font-family: 'Great Vibes', cursive;
+    font-size: 5em;
+    color: #fff;
+    margin-top: 0; /* Remove default top margin */
+}
+
+.subheadings-introduction {
+    font-family: 'Great Vibes', cursive;
+    font-size: 5em;
+    color: #fff;
+    margin-top: 1; /* Remove default top margin */
+}
+
+#ceremony p {
+    font-family: 'Just Another Hand', cursive; /* Apply Just Another Hand font */
+    color: #fff;
+    font-size: 3.5em;
+    padding: 0 15%; /* Add padding to match the text with the image */
+}
+
+.textContainerCeremony {
+    padding: 0 10%; /* 20% padding on the left and right */
+    padding-top: 45%;
+}
+
+
+#agenda img {
+    padding-left:5%;
+    width: 70vw;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 413px) {
+    #agenda img {
+        padding-left:5%;
+        width: 80vw;
+        max-width: 100%;
+    }
+}
+
+#places-to-stay p {
+    font-family: 'Just Another Hand', cursive; /* Apply Just Another Hand font */
+    color: #fff;
+    font-size: 3.5em;
+    padding: 0 15%; /* Add padding to match the text with the image */
+}
+
+.placesToStayList {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Just Another Hand', cursive; /* Apply Just Another Hand font */
+}
+
+.placesToStayList li {
+    margin-bottom: 10px; /* Adjust as needed for spacing between items */
+    color: #fff;
+    font-size: 3em;
+}
+
+.taxiList {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Just Another Hand', cursive; /* Apply Just Another Hand font */
+}
+
+.taxiList li {
+    margin-bottom: 10px; /* Adjust as needed for spacing between items */
+    color: #fff;
+    font-size: 3.5em;
+}
+
+#rsvp p {
+    font-family: 'Just Another Hand', cursive; /* Apply Just Another Hand font */
+    color: #fff;
+    font-size: 3.5em;
+    padding: 0 15%; /* Add padding to match the text with the image */
+}
+
+
+
+.faq-table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.faq-row {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-family: 'Just Another Hand', cursive; /* Apply Just Another Hand font */
+    color: #fff;
+    font-size: 3.5em;
+}
+
+.question {
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    transition: max-height 0.3s ease; /* Added transition for smoother effect */
+    overflow: hidden; /* Hide overflow content during transition */
+    max-height: 0; /* Initially hide the answer */
+}
+
+.answer.opened {
+    display: block; /* Show the answer when opened */
+    max-height: 500px; /* Set a maximum height for the answer */
+}
+
+.arrow {
+    float: right;
+}
+
+.arrow.opened {
+    transform: rotate(90deg);
+}
+
+
+#gifts p {
+    font-family: 'Just Another Hand', cursive; /* Apply Just Another Hand font */
+    color: #fff;
+    font-size: 3.5em;
+    padding: 0 15%; /* Add padding to match the text with the image */
+}
+
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 3em; /* Adjust font size for smaller screens */
+    }
+    
+    p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Adjust font sizes for larger screens */
+@media only screen and (min-width: 1200px) {
+    h2 {
+        font-size: 6em; /* Adjust font size for larger screens */
+    }
+    
+    p {
+        font-size: 2em; /* Adjust font size for larger screens */
+    }
+}
+
+/* Adjust the width of the FAQ table for smaller screens */
+@media only screen and (max-width: 600px) {
+    .faq-table {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Adjust the width of the FAQ table for larger screens */
+@media only screen and (min-width: 1200px) {
+    .faq-table {
+        width: 70%; /* Adjust width for larger screens */
+    }
+}
