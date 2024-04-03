@@ -26,6 +26,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index:1000;
 }
 
 nav ul {
@@ -132,12 +133,73 @@ p {
     
 }
 
+/*#ceremony {*/
+    /*background-image: url('photos/newlandHall.JPG');*/
+    /*background-size: 100% 85%; /* Cover 100% of width and 80% of height */
+    /*background-position: center bottom; /* Center the background image */
+    /*background-repeat: no-repeat; /* Do not repeat the background image */
+/*} */
+
+
+
+
 #ceremony {
-    background-image: url('photos/newlandHall.JPG');
-    background-size: 100% 85%; /* Cover 100% of width and 80% of height */
-    background-position: center bottom; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the background image */
+    position: relative;
+    overflow: hidden;
 }
+
+.photoAlbum {
+    position: relative;
+    width:80%;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.photoFrame {
+    float: left;
+    width: 100%;
+    display: none;
+}
+
+.photoFrame img {
+    width: 100%;
+    height: auto;
+    
+    display:block;
+    transition: transform 0.5s ease;
+}
+
+#prevButton, #nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+#prevButton {
+    left: 0;
+}
+
+#nextButton {
+    right: 0;
+}
+
+/* Show the first photo initially */
+.photoFrame:first-child {
+    display: block;
+}
+
+
+
+
+
+
 
 .subheadings {
     font-family: 'Great Vibes', cursive;
