@@ -340,6 +340,19 @@ p {
     padding: 0 15%; /* Add padding to match the text with the image */
 }
 
+#thankyou p {
+    font-family: 'Arial', cursive; /* Apply Just Another Hand font */
+    color: #fff;
+    font-size: 3em;
+    padding: 0 15%; /* Add padding to match the text with the image */
+}
+
+#thankyou img {
+    width: 844.5px;
+    height: 618px;
+}
+
+
 
 @media only screen and (max-width: 600px) {
     h2 {
@@ -367,6 +380,7 @@ p {
     .faq-table {
         width: 90%; /* Adjust width for smaller screens */
     }
+    
 }
 
 /* Adjust the width of the FAQ table for larger screens */
@@ -374,4 +388,14 @@ p {
     .faq-table {
         width: 70%; /* Adjust width for larger screens */
     }
+}
+
+/* Adjust the width of the couple image for smaller screens */
+@media only screen and (max-width: 860px) {
+
+    #thankyou img {
+        width: 422.25px;
+        height: 309px;
+    }
+    
 }
