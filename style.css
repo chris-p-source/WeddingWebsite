@@ -381,6 +381,11 @@ p {
         width: 90%; /* Adjust width for smaller screens */
     }
     
+    .textContainerIntroduction {
+        position:relative;
+        padding: 30% 15%; /* 20% padding on the left and right */
+        padding-top: 500px;
+    }
 }
 
 /* Adjust the width of the FAQ table for larger screens */
