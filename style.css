@@ -101,6 +101,12 @@ h2 {
     color: #fff;
 }
 
+h3 {
+    font-family: 'Great Vibes', cursive; /* Use Great Vibes font */
+    font-size: 3em; /* Original font size */
+    color: #fff;
+}
+
 p {
     font-family: 'Josefin Sans', sans-serif; /* Apply Josefin Sans to all paragraphs */
     color: #fff;
@@ -205,10 +211,6 @@ p {
 .photoFrame:first-child {
     display: block;
 }
-
-
-
-
 
 
 
