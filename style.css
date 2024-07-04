@@ -354,7 +354,13 @@ p {
     height: 618px;
 }
 
+.food h3 {
 
+    font-family: 'Great Vibes', cursive; /* Use Great Vibes font */
+    font-size: 3em; /* Original font size */
+    color: #fff;
+
+}
 
 @media only screen and (max-width: 600px) {
     h2 {
