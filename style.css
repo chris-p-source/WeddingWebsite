@@ -223,7 +223,7 @@ p {
 
 .subheadings-introduction {
     font-family: 'Great Vibes', cursive;
-    font-size: 5em;
+    font-size: 6em;
     color: #fff;
     margin-top: 1; /* Remove default top margin */
 }
@@ -368,7 +368,7 @@ p {
     }
     
     p {
-        font-size: 1em; /* Adjust font size for smaller screens */
+        font-size: 3em; /* Adjust font size for smaller screens */
     }
 }
 
